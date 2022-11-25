@@ -1,0 +1,35 @@
+.rightBloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*
+** Color Picker
+**/
+
+.colorPicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.colorButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+.colorButton .color {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.colorButton p {
+    font-size: .8rem;
+    margin: 0;
+}
