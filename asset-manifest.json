@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9e7d89e.css",
-    "main.js": "/static/js/main.b3564cb2.js",
-    "static/js/787.79891b12.chunk.js": "/static/js/787.79891b12.chunk.js",
-    "index.html": "/index.html",
-    "main.e9e7d89e.css.map": "/static/css/main.e9e7d89e.css.map",
-    "main.b3564cb2.js.map": "/static/js/main.b3564cb2.js.map",
-    "787.79891b12.chunk.js.map": "/static/js/787.79891b12.chunk.js.map"
+    "main.css": "/Concours_1/static/css/main.e9e7d89e.css",
+    "main.js": "/Concours_1/static/js/main.207b0323.js",
+    "static/js/787.79891b12.chunk.js": "/Concours_1/static/js/787.79891b12.chunk.js",
+    "index.html": "/Concours_1/index.html",
+    "main.e9e7d89e.css.map": "/Concours_1/static/css/main.e9e7d89e.css.map",
+    "main.207b0323.js.map": "/Concours_1/static/js/main.207b0323.js.map",
+    "787.79891b12.chunk.js.map": "/Concours_1/static/js/787.79891b12.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9e7d89e.css",
-    "static/js/main.b3564cb2.js"
+    "static/js/main.207b0323.js"
   ]
 }
