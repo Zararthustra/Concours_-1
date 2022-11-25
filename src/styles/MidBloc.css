@@ -1,0 +1,55 @@
+.midBloc {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+/*
+** Model Title
+**/
+
+.modelTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.modelTitle h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #333;
+}
+.modelTitle p {
+  margin: 0 0 0 0.2rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/*
+** Images
+**/
+
+.midBloc .images img {
+  width: 12rem;
+}
+.images {
+  width: 25rem;
+  height: 20rem;
+  position: relative;
+}
+.imgFull,
+.imgSide,
+.imgCamera {
+  position: absolute;
+}
+.imgFull {
+  top: -12rem;
+  right: 0;
+}
+.imgSide {
+  top: -5rem;
+}
+.imgCamera {
+  top: 1rem;
+}

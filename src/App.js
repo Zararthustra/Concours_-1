@@ -2,13 +2,14 @@ import { ColorBubble } from "./components/ColorBubble";
 import { Navbar } from "./components/Navbar";
 import { RightBloc } from "./components/RightBloc";
 import { useState } from "react";
+import { MidBloc } from "./components/MidBloc";
 
 function App() {
   const [color, setColor] = useState("var(--green)");
 
   return (
     <>
-      <Navbar />
+      <Navbar color={color}/>
       <ColorBubble
         size={"20rem"}
         top={"-6rem"}
@@ -23,7 +24,7 @@ function App() {
       />
       <main>
         <div>Bloc 1</div>
-        <div>Bloc 2</div>
+        <MidBloc color={color} />
         <RightBloc color={color} setColor={setColor} />
       </main>
     </>
