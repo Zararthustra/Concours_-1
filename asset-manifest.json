@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/concours_1/index.html/static/css/main.e9e7d89e.css",
-    "main.js": "/concours_1/index.html/static/js/main.5ec0e731.js",
-    "static/js/787.79891b12.chunk.js": "/concours_1/index.html/static/js/787.79891b12.chunk.js",
-    "index.html": "/concours_1/index.html/index.html",
-    "main.e9e7d89e.css.map": "/concours_1/index.html/static/css/main.e9e7d89e.css.map",
-    "main.5ec0e731.js.map": "/concours_1/index.html/static/js/main.5ec0e731.js.map",
-    "787.79891b12.chunk.js.map": "/concours_1/index.html/static/js/787.79891b12.chunk.js.map"
+    "main.css": "/concours_1/static/css/main.e9e7d89e.css",
+    "main.js": "/concours_1/static/js/main.7db82cfb.js",
+    "static/js/787.79891b12.chunk.js": "/concours_1/static/js/787.79891b12.chunk.js",
+    "index.html": "/concours_1/index.html",
+    "main.e9e7d89e.css.map": "/concours_1/static/css/main.e9e7d89e.css.map",
+    "main.7db82cfb.js.map": "/concours_1/static/js/main.7db82cfb.js.map",
+    "787.79891b12.chunk.js.map": "/concours_1/static/js/787.79891b12.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9e7d89e.css",
-    "static/js/main.5ec0e731.js"
+    "static/js/main.7db82cfb.js"
   ]
 }
