@@ -11,6 +11,7 @@ export const ColorBubble = ({ size, top, left, right, backgroundColor }) => {
         borderRadius: "50%",
         position: "absolute",
         zIndex: "-1",
+        transition: "all .5s"
       }}
     />
   );

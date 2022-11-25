@@ -2,6 +2,9 @@
 
 /* @media (min-width: 800px) {
 } */
+* {
+  font-family: 'Asap Condensed', sans-serif;
+}
 
 :root {
   --background: #F5F5F5;
@@ -9,7 +12,7 @@
   --white: #FAFAFA;
   --pink: #EBD8D4;
   --green: #556E6B;
-  font-family: 'Asap Condensed', sans-serif;
+
   font-size: 16px;
   background-color: var(--background);
 }
@@ -22,8 +25,9 @@ body {
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 5rem 2rem;
 }
 
 

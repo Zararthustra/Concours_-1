@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  gap: 5rem;
 }
 
 /*
@@ -30,6 +31,72 @@
   border-radius: 50%;
 }
 .colorButton p {
-    font-size: .8rem;
-    margin: 0;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/*
+** Strorage Capacity
+**/
+
+.strorageCapacity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.strorageCapacity div {
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all .5s;
+}
+
+/*
+** Details
+**/
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+}
+.details li div:first-child {
+  font-weight: 600;
+}
+
+/*
+** Add to cart button
+**/
+
+.addToCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.addToCart svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
