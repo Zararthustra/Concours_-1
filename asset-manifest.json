@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Concours_1/static/css/main.96e2c0fd.css",
-    "main.js": "/Concours_1/static/js/main.4009ba0d.js",
+    "main.css": "/Concours_1/static/css/main.0e5de9b1.css",
+    "main.js": "/Concours_1/static/js/main.e0258723.js",
     "static/js/787.79891b12.chunk.js": "/Concours_1/static/js/787.79891b12.chunk.js",
     "static/media/black0.png": "/Concours_1/static/media/black0.22d2602ff48120adc7e7.png",
     "static/media/pink0.png": "/Concours_1/static/media/pink0.b55deedf4c0667df83d1.png",
@@ -19,12 +19,12 @@
     "static/media/add-cart.svg": "/Concours_1/static/media/add-cart.08e621e2034248a50aa5d50243914afe.svg",
     "index.html": "/Concours_1/index.html",
     "static/media/profile.svg": "/Concours_1/static/media/profile.908cf6011ea65362afa6f1709e74ec7b.svg",
-    "main.96e2c0fd.css.map": "/Concours_1/static/css/main.96e2c0fd.css.map",
-    "main.4009ba0d.js.map": "/Concours_1/static/js/main.4009ba0d.js.map",
+    "main.0e5de9b1.css.map": "/Concours_1/static/css/main.0e5de9b1.css.map",
+    "main.e0258723.js.map": "/Concours_1/static/js/main.e0258723.js.map",
     "787.79891b12.chunk.js.map": "/Concours_1/static/js/787.79891b12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96e2c0fd.css",
-    "static/js/main.4009ba0d.js"
+    "static/css/main.0e5de9b1.css",
+    "static/js/main.e0258723.js"
   ]
 }
