@@ -2,19 +2,22 @@
 
 /* @media (min-width: 800px) {
 } */
-* {
-  font-family: "Asap Condensed", sans-serif;
-}
 
 :root {
-  --background: #f5f5f5;
+  --background: #eee6e6;
   --black: #37383a;
   --white: #fafafa;
   --pink: #ebd8d4;
   --green: #556e6b;
-
+  
+  font-family: "Asap Condensed", sans-serif;
   font-size: 16px;
   background-color: var(--background);
+}
+
+::selection {
+  background-color: var(--black);
+  color: white;
 }
 
 body {
@@ -29,7 +32,37 @@ main {
   justify-content: center;
   align-items: center;
   padding: 5rem 2rem;
-  gap: 10vw;
+  gap: 5rem;
+}
+
+/*
+** Model Title
+**/
+
+.modelTitle {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.modelTitle h1 {
+  font-size: 9rem;
+  margin: 0;
+  background-image: url("./assets/space.jpg") !important;
+  background-size: cover;
+  background-clip: text;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-in-out;
+}
+.modelTitle h2 {
+  position: absolute;
+  font-size: 4rem;
+  margin: 0;
+  bottom: -2rem;
+  right: 3rem;
+  animation: slideFromTop 1.5s ease-in-out;
 }
 
 /*
@@ -99,21 +132,45 @@ main {
     opacity: 1;
   }
 }
+@keyframes bubbleFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    scale: 0
   }
   100% {
     opacity: 1;
-    scale: 1
   }
 }
-@keyframes deusExMachina {
-  0% {
-    transform: translateY(-70rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
+
+/*
+** Scrollbar
+**/
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000a1;
 }

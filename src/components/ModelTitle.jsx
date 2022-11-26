@@ -1,19 +1,16 @@
-export const ModelTitle = ({ color, selectedStorage }) => {
+export const ModelTitle = ({ color }) => {
   return (
-    <div className="modelTitle">
-      <div
-        style={{
-          width: "7px",
-          height: "4rem",
-          backgroundColor: color,
-          marginTop: ".4rem",
-          transition: "all .5s",
-        }}
-      />
-      <div>
-        <h1>Galaxy S22</h1>
-        <p>{selectedStorage === 128 ? "599.00 €" : "649.00 €"}</p>
+    <header
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div className="modelTitle">
+        <h1>Galaxy</h1>
+        <h2 style={{ color }}>S22</h2>
       </div>
-    </div>
+    </header>
   );
 };

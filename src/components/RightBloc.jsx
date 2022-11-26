@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { AddToCartButton } from "./AddToCartButton";
 import { ColorPicker } from "./ColorPicker";
 import { Details } from "./Details";
@@ -6,11 +7,11 @@ import { StrorageCapacity } from "./StrorageCapacity";
 export const RightBloc = ({
   color,
   setColor,
-  selectedStorage,
-  setSelectedStorage,
   cartNumber,
   setCartNumber,
 }) => {
+  const [selectedStorage, setSelectedStorage] = useState(128);
+
   return (
     <div className="rightBloc">
       <ColorPicker color={color} setColor={setColor} />
@@ -19,6 +20,7 @@ export const RightBloc = ({
         setSelectedStorage={setSelectedStorage}
         color={color}
       />
+      <p>{selectedStorage === 128 ? "599.00 €" : "649.00 €"}</p>
       <Details />
       <AddToCartButton
         color={color}

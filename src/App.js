@@ -4,10 +4,10 @@ import { RightBloc } from "./components/RightBloc";
 import { useState } from "react";
 import { MidBloc } from "./components/MidBloc";
 import { LeftBloc } from "./components/LeftBloc";
+import { ModelTitle } from "./components/ModelTitle";
 
 function App() {
   const [color, setColor] = useState("var(--green)");
-  const [selectedStorage, setSelectedStorage] = useState(128);
   const [cartNumber, setCartNumber] = useState(0);
 
   return (
@@ -26,17 +26,16 @@ function App() {
         backgroundColor={color}
       />
       <ColorBubble
-        size={"70vw"}
-        top={"21rem"}
-        left={"5vw"}
+        size={"40vw"}
+        top={"20rem"}
+        left={"8vw"}
         backgroundColor={color}
       />
+      <ModelTitle color={color} />
       <main>
         <LeftBloc color={color} setColor={setColor} />
-        <MidBloc selectedStorage={selectedStorage} color={color} />
+        <MidBloc color={color} />
         <RightBloc
-          selectedStorage={selectedStorage}
-          setSelectedStorage={setSelectedStorage}
           color={color}
           setColor={setColor}
           cartNumber={cartNumber}

@@ -1,64 +1,31 @@
 .midBloc {
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
-}
-
-/*
-** Model Title
-**/
-
-.modelTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-}
-.modelTitle div:first-child {
-  animation: deusExMachina 1s ease-out;
-}
-.modelTitle h1 {
-  margin: 0;
-  font-size: 3rem;
-  color: #333;
-  animation: slideFromTop 1.2s ease-in-out;
-}
-.modelTitle p {
-  margin: 0 0 0 0.2rem;
-  color: #333;
-  font-size: 1.2rem;
-  animation: slideFromTop 1.2s ease-in-out;
+  position: relative;
+  width: 20rem;
+  height: 35rem;
 }
 
 /*
 ** Images
 **/
 
-.midBloc .images img {
-  width: 10rem;
-}
-.images {
-  width: 22rem;
-  height: 20rem;
-  position: relative;
+.midBloc img {
+  max-width: 9rem;
 }
 .imgFull,
 .imgSide,
 .imgCamera {
   position: absolute;
-  animation: slideFromBot 2s ease-in-out;
 }
 .imgFull {
-  height: 23rem;
-  top: -12rem;
+  top: 3rem;
   right: 0;
-  animation: slideFromTop 2s ease-in-out;
+  animation: slideFromTop 1.5s ease-in-out;
 }
 .imgSide {
-  top: -5rem;
-  animation: slideFromLeft 2s ease-in-out;
+  top: 10rem;
+  animation: slideFromLeft 1.5s ease-in-out;
 }
 .imgCamera {
-  top: 1rem;
+  top: 16rem;
+  animation: slideFromBot 1.5s ease-in-out;
 }

@@ -15,7 +15,7 @@ export const LeftBloc = ({ color, setColor }) => {
         style={{
           zIndex: isSelected("var(--black)") ? "1" : "0",
           filter: isSelected("var(--black)")
-            ? "grayscale(0)"
+            ? "drop-shadow(4px 4px 10px black)"
             : "grayscale(100%)",
         }}
         onClick={() => setColor("var(--black)")}
@@ -29,7 +29,7 @@ export const LeftBloc = ({ color, setColor }) => {
         style={{
           zIndex: isSelected("var(--white)") ? "1" : "0",
           filter: isSelected("var(--white)")
-            ? "grayscale(0)"
+            ? "drop-shadow(4px 4px 10px black)"
             : "grayscale(100%)",
         }}
         onClick={() => setColor("var(--white)")}
@@ -43,7 +43,7 @@ export const LeftBloc = ({ color, setColor }) => {
         style={{
           zIndex: isSelected("var(--green)") ? "1" : "0",
           filter: isSelected("var(--green)")
-            ? "grayscale(0)"
+            ? "drop-shadow(4px 4px 10px black)"
             : "grayscale(100%)",
         }}
         onClick={() => setColor("var(--green)")}
@@ -57,7 +57,7 @@ export const LeftBloc = ({ color, setColor }) => {
         style={{
           zIndex: isSelected("var(--pink)") ? "1" : "0",
           filter: isSelected("var(--pink)")
-            ? "grayscale(0)"
+            ? "drop-shadow(4px 4px 10px black)"
             : "grayscale(100%)",
         }}
         onClick={() => setColor("var(--pink)")}
