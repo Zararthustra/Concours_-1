@@ -3,15 +3,15 @@
 /* @media (min-width: 800px) {
 } */
 * {
-  font-family: 'Asap Condensed', sans-serif;
+  font-family: "Asap Condensed", sans-serif;
 }
 
 :root {
-  --background: #F5F5F5;
-  --black: #37383A;
-  --white: #FAFAFA;
-  --pink: #EBD8D4;
-  --green: #556E6B;
+  --background: #f5f5f5;
+  --black: #37383a;
+  --white: #fafafa;
+  --pink: #ebd8d4;
+  --green: #556e6b;
 
   font-size: 16px;
   background-color: var(--background);
@@ -26,7 +26,95 @@ body {
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 5rem 2rem;
+  gap: 10vw;
+}
+
+/*
+** Animations
+**/
+
+@keyframes upNdown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromBot {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes deusExMachina {
+  0% {
+    transform: translateY(-70rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

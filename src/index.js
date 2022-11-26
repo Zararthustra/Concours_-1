@@ -6,6 +6,7 @@ import './App.css';
 import './styles/Navbar.css';
 import './styles/RightBloc.css';
 import './styles/MidBloc.css';
+import './styles/LeftBloc.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,0 +1,40 @@
+.leftBloc {
+  position: relative;
+  width: 25.5rem;
+  height: 40rem;
+}
+
+.leftBloc img {
+  position: absolute;
+  width: 15rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.leftBloc img:hover {
+  z-index: 1;
+  scale: 1.05;
+}
+.leftBloc .isSelected {
+  filter: drop-shadow(4px 4px 10px black) !important;
+  animation: slideFromLeft 1s ease-in-out, upNdown 4s ease-in-out infinite !important;
+}
+#img1 {
+  top: 0;
+  right: 0;
+  animation: slideFromLeft 1.3s ease-in-out;
+}
+#img2 {
+  top: 7rem;
+  right: 3.5rem;
+  animation: slideFromLeft 1.3s ease-in-out;
+}
+#img3 {
+  top: 14rem;
+  left: 3.5rem;
+  animation: slideFromLeft 1.3s ease-in-out;
+}
+#img4 {
+  top: 21rem;
+  left: 0;
+  animation: slideFromLeft 1.3s ease-in-out;
+}

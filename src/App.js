@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { RightBloc } from "./components/RightBloc";
 import { useState } from "react";
 import { MidBloc } from "./components/MidBloc";
+import { LeftBloc } from "./components/LeftBloc";
 
 function App() {
   const [color, setColor] = useState("var(--green)");
@@ -15,7 +16,7 @@ function App() {
       <ColorBubble
         size={"20rem"}
         top={"-6rem"}
-        left={"-11.5rem"}
+        left={"-8rem"}
         backgroundColor={color}
       />
       <ColorBubble
@@ -24,8 +25,14 @@ function App() {
         right={"2.5rem"}
         backgroundColor={color}
       />
+      <ColorBubble
+        size={"70vw"}
+        top={"21rem"}
+        left={"5vw"}
+        backgroundColor={color}
+      />
       <main>
-        <div>Bloc 1</div>
+        <LeftBloc color={color} setColor={setColor} />
         <MidBloc selectedStorage={selectedStorage} color={color} />
         <RightBloc
           selectedStorage={selectedStorage}

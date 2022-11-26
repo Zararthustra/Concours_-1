@@ -1,7 +1,7 @@
 .midBloc {
   display: flex;
   flex-direction: column;
-  gap: 12rem;
+  gap: 15rem;
 }
 
 /*
@@ -15,15 +15,20 @@
   gap: 1rem;
   width: 100%;
 }
+.modelTitle div:first-child {
+  animation: deusExMachina 1s ease-out;
+}
 .modelTitle h1 {
   margin: 0;
   font-size: 3rem;
   color: #333;
+  animation: slideFromTop 1.2s ease-in-out;
 }
 .modelTitle p {
   margin: 0 0 0 0.2rem;
   color: #333;
   font-size: 1.2rem;
+  animation: slideFromTop 1.2s ease-in-out;
 }
 
 /*
@@ -31,10 +36,10 @@
 **/
 
 .midBloc .images img {
-  width: 12rem;
+  width: 10rem;
 }
 .images {
-  width: 25rem;
+  width: 22rem;
   height: 20rem;
   position: relative;
 }
@@ -42,68 +47,18 @@
 .imgSide,
 .imgCamera {
   position: absolute;
-  animation: slideFromBot 1s ease-in-out;
+  animation: slideFromBot 2s ease-in-out;
 }
 .imgFull {
+  height: 23rem;
   top: -12rem;
   right: 0;
-  animation: upNdown 4s ease-in-out infinite, slideFromTop 1s ease-in-out;
+  animation: slideFromTop 2s ease-in-out;
 }
 .imgSide {
   top: -5rem;
-  animation: slideFromLeft 1s ease-in-out;
+  animation: slideFromLeft 2s ease-in-out;
 }
 .imgCamera {
   top: 1rem;
-}
-
-@keyframes upNdown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(3%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes slideFromTop {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slideFromBot {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slideFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }

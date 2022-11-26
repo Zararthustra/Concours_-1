@@ -9,21 +9,21 @@ export const MidBloc = ({ color, selectedStorage }) => {
         <img
           className="imgFull"
           src={getImages(color)[0]}
-          alt={"Samsung S22 " + getColorName(color) + " en entier vue arrière"}
+          alt={"Samsung Galaxy S22 " + getColorName(color) + " en entier vue arrière"}
           title={
-            "Samsung S22 " + getColorName(color) + " en entier vue arrière"
+            "Samsung Galaxy S22 " + getColorName(color) + " en entier vue arrière"
           }
         />
         <img
           className="imgCamera"
           src={getImages(color)[1]}
           alt={
-            "Samsung S22 " +
+            "Samsung Galaxy S22 " +
             getColorName(color) +
             " focus sur la caméra arrière"
           }
           title={
-            "Samsung S22 " +
+            "Samsung Galaxy S22 " +
             getColorName(color) +
             " focus sur la caméra arrière"
           }
@@ -31,9 +31,9 @@ export const MidBloc = ({ color, selectedStorage }) => {
         <img
           className="imgSide"
           src={getImages(color)[2]}
-          alt={"Samsung S22 " + getColorName(color) + " vue tranche épaisseur"}
+          alt={"Samsung Galaxy S22 " + getColorName(color) + " vue tranche épaisseur"}
           title={
-            "Samsung S22 " + getColorName(color) + " vue tranche épaisseur"
+            "Samsung Galaxy S22 " + getColorName(color) + " vue tranche épaisseur"
           }
         />
       </div>
