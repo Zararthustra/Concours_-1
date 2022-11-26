@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  animation: slideFromLeft 1.3s ease-in-out;
+  animation: slideFromLeft 1.7s ease-in-out;
 }
 .colorButton {
   display: flex;
