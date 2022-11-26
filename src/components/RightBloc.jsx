@@ -1,11 +1,16 @@
-import { useState } from "react";
 import { AddToCartButton } from "./AddToCartButton";
 import { ColorPicker } from "./ColorPicker";
 import { Details } from "./Details";
 import { StrorageCapacity } from "./StrorageCapacity";
 
-export const RightBloc = ({ color, setColor }) => {
-  const [selectedStorage, setSelectedStorage] = useState(128);
+export const RightBloc = ({
+  color,
+  setColor,
+  selectedStorage,
+  setSelectedStorage,
+  cartNumber,
+  setCartNumber,
+}) => {
   return (
     <div className="rightBloc">
       <ColorPicker color={color} setColor={setColor} />
@@ -15,7 +20,11 @@ export const RightBloc = ({ color, setColor }) => {
         color={color}
       />
       <Details />
-      <AddToCartButton color={color} />
+      <AddToCartButton
+        color={color}
+        cartNumber={cartNumber}
+        setCartNumber={setCartNumber}
+      />
     </div>
   );
 };

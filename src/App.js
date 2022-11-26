@@ -6,10 +6,12 @@ import { MidBloc } from "./components/MidBloc";
 
 function App() {
   const [color, setColor] = useState("var(--green)");
+  const [selectedStorage, setSelectedStorage] = useState(128);
+  const [cartNumber, setCartNumber] = useState(0);
 
   return (
     <>
-      <Navbar color={color}/>
+      <Navbar color={color} cartNumber={cartNumber} />
       <ColorBubble
         size={"20rem"}
         top={"-6rem"}
@@ -24,8 +26,15 @@ function App() {
       />
       <main>
         <div>Bloc 1</div>
-        <MidBloc color={color} />
-        <RightBloc color={color} setColor={setColor} />
+        <MidBloc selectedStorage={selectedStorage} color={color} />
+        <RightBloc
+          selectedStorage={selectedStorage}
+          setSelectedStorage={setSelectedStorage}
+          color={color}
+          setColor={setColor}
+          cartNumber={cartNumber}
+          setCartNumber={setCartNumber}
+        />
       </main>
     </>
   );

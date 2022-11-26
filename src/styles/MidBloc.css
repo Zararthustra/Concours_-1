@@ -42,14 +42,68 @@
 .imgSide,
 .imgCamera {
   position: absolute;
+  animation: slideFromBot 1s ease-in-out;
 }
 .imgFull {
   top: -12rem;
   right: 0;
+  animation: upNdown 4s ease-in-out infinite, slideFromTop 1s ease-in-out;
 }
 .imgSide {
   top: -5rem;
+  animation: slideFromLeft 1s ease-in-out;
 }
 .imgCamera {
   top: 1rem;
+}
+
+@keyframes upNdown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromBot {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
