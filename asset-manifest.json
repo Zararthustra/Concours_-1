@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/Concours_1/static/css/main.b7f24abd.css",
-    "main.js": "/Concours_1/static/js/main.1365c269.js",
+    "main.css": "/Concours_1/static/css/main.26bdb438.css",
+    "main.js": "/Concours_1/static/js/main.31abb6e8.js",
     "static/js/787.79891b12.chunk.js": "/Concours_1/static/js/787.79891b12.chunk.js",
-    "static/media/pink1.png": "/Concours_1/static/media/pink1.96fd181b24d871c5165d.png",
-    "static/media/green1.png": "/Concours_1/static/media/green1.5d5451b7c9d33e90e36c.png",
-    "static/media/green2.png": "/Concours_1/static/media/green2.38a21c8db5b5a010468b.png",
-    "static/media/pink2.png": "/Concours_1/static/media/pink2.10eb17d265b93b5f2114.png",
-    "static/media/black1.png": "/Concours_1/static/media/black1.d9886a31fe4e0c8929a5.png",
-    "static/media/white2.png": "/Concours_1/static/media/white2.10729d0905885d09396e.png",
-    "static/media/black2.png": "/Concours_1/static/media/black2.fe27908395ae6539089a.png",
-    "static/media/white1.png": "/Concours_1/static/media/white1.8492397413ba5f7ed92d.png",
-    "static/media/pink3.png": "/Concours_1/static/media/pink3.139e85c2a90e8e231019.png",
-    "static/media/green3.png": "/Concours_1/static/media/green3.10a42ab91a9ad598c5d0.png",
-    "static/media/white3.png": "/Concours_1/static/media/white3.06c014b3d2196363be9a.png",
+    "static/media/black0.png": "/Concours_1/static/media/black0.22d2602ff48120adc7e7.png",
+    "static/media/pink0.png": "/Concours_1/static/media/pink0.b55deedf4c0667df83d1.png",
+    "static/media/white0.png": "/Concours_1/static/media/white0.97830c51471b8c39fc24.png",
+    "static/media/green0.png": "/Concours_1/static/media/green0.aaea2d4c0c1c2b20f350.png",
+    "static/media/green2.png": "/Concours_1/static/media/green2.7681e90633bd539c2b20.png",
+    "static/media/pink2.png": "/Concours_1/static/media/pink2.082397c6d9ffb1843570.png",
+    "static/media/pink1.png": "/Concours_1/static/media/pink1.4b334d13b0aad3d07bf4.png",
+    "static/media/green1.png": "/Concours_1/static/media/green1.7615f94ed71846dbf452.png",
+    "static/media/black2.png": "/Concours_1/static/media/black2.a95d66bb3bb4e815029d.png",
+    "static/media/white2.png": "/Concours_1/static/media/white2.d08aae8c69c40d287331.png",
+    "static/media/black1.png": "/Concours_1/static/media/black1.d0387c8a63c6099678f3.png",
+    "static/media/white1.png": "/Concours_1/static/media/white1.0883528f41e65ea78028.png",
+    "static/media/samsung.svg": "/Concours_1/static/media/samsung.1aad67fc3f3b43731560981299a22ffc.svg",
     "static/media/add-cart.svg": "/Concours_1/static/media/add-cart.08e621e2034248a50aa5d50243914afe.svg",
     "index.html": "/Concours_1/index.html",
     "static/media/profile.svg": "/Concours_1/static/media/profile.908cf6011ea65362afa6f1709e74ec7b.svg",
-    "main.b7f24abd.css.map": "/Concours_1/static/css/main.b7f24abd.css.map",
-    "main.1365c269.js.map": "/Concours_1/static/js/main.1365c269.js.map",
+    "main.26bdb438.css.map": "/Concours_1/static/css/main.26bdb438.css.map",
+    "main.31abb6e8.js.map": "/Concours_1/static/js/main.31abb6e8.js.map",
     "787.79891b12.chunk.js.map": "/Concours_1/static/js/787.79891b12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7f24abd.css",
-    "static/js/main.1365c269.js"
+    "static/css/main.26bdb438.css",
+    "static/js/main.31abb6e8.js"
   ]
 }
