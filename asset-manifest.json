@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Concours_1/static/css/main.bc8fc5a0.css",
-    "main.js": "/Concours_1/static/js/main.caf31be8.js",
+    "main.css": "/Concours_1/static/css/main.d44bb83a.css",
+    "main.js": "/Concours_1/static/js/main.89916f54.js",
     "static/js/787.79891b12.chunk.js": "/Concours_1/static/js/787.79891b12.chunk.js",
     "static/media/space.jpg": "/Concours_1/static/media/space.8824ec1ee8af27902a6c.jpg",
     "static/media/black0.png": "/Concours_1/static/media/black0.22d2602ff48120adc7e7.png",
@@ -20,12 +20,12 @@
     "index.html": "/Concours_1/index.html",
     "static/media/add-cart.svg": "/Concours_1/static/media/add-cart.08e621e2034248a50aa5d50243914afe.svg",
     "static/media/profile.svg": "/Concours_1/static/media/profile.908cf6011ea65362afa6f1709e74ec7b.svg",
-    "main.bc8fc5a0.css.map": "/Concours_1/static/css/main.bc8fc5a0.css.map",
-    "main.caf31be8.js.map": "/Concours_1/static/js/main.caf31be8.js.map",
+    "main.d44bb83a.css.map": "/Concours_1/static/css/main.d44bb83a.css.map",
+    "main.89916f54.js.map": "/Concours_1/static/js/main.89916f54.js.map",
     "787.79891b12.chunk.js.map": "/Concours_1/static/js/787.79891b12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc8fc5a0.css",
-    "static/js/main.caf31be8.js"
+    "static/css/main.d44bb83a.css",
+    "static/js/main.89916f54.js"
   ]
 }
