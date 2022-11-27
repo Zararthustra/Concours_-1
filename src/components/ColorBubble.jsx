@@ -1,6 +1,14 @@
-export const ColorBubble = ({ size, top, left, right, backgroundColor }) => {
+export const ColorBubble = ({
+  className,
+  size,
+  top,
+  left,
+  right,
+  backgroundColor,
+}) => {
   return (
     <div
+      className={className}
       style={{
         width: size,
         height: size,
@@ -13,7 +21,7 @@ export const ColorBubble = ({ size, top, left, right, backgroundColor }) => {
         zIndex: "-1",
         transition: "all .5s",
         animation: "bubbleFadeIn 4s ease-in",
-        opacity: "0.8"
+        opacity: "0.8",
       }}
     />
   );

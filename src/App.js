@@ -26,6 +26,7 @@ function App() {
         backgroundColor={color}
       />
       <ColorBubble
+        className="bigCenterColorBubble"
         size={"40vw"}
         top={"20rem"}
         left={"8vw"}
