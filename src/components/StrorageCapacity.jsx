@@ -8,11 +8,16 @@ export const StrorageCapacity = ({
   return (
     <div className="strorageCapacity">
       <div
+        className="movingBox"
+        style={{
+          backgroundColor: color,
+          left: selectedStorage === 128 ? "0%" : "55%",
+        }}
+      />
+      <div
         onClick={() => setSelectedStorage(128)}
         style={{
-          outline: selectedStorage === 128 && "1px solid #888",
           fontWeight: selectedStorage === 128 && "600",
-          backgroundColor: selectedStorage === 128 && color,
           color: selectedStorage === 128 && getContrast(color),
         }}
       >
@@ -21,9 +26,7 @@ export const StrorageCapacity = ({
       <div
         onClick={() => setSelectedStorage(256)}
         style={{
-          outline: selectedStorage === 256 && "1px solid #888",
           fontWeight: selectedStorage === 256 && "600",
-          backgroundColor: selectedStorage === 256 && color,
           color: selectedStorage === 256 && getContrast(color),
         }}
       >

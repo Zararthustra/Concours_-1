@@ -53,17 +53,27 @@
 **/
 
 .strorageCapacity {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   animation: slideFromRight 2.2s ease-in-out;
 }
+.movingBox {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 0;
+  outline: 1px solid #888;
+  width: 45%;
+  height: 100%;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
 .strorageCapacity div {
   padding: 0.4rem 0.7rem;
   cursor: pointer;
-  border-radius: 3px;
-  transition: all .5s;
+  z-index: 1;
 }
 
 /*
@@ -111,7 +121,7 @@
   letter-spacing: 1px;
   cursor: pointer;
   font-family: "Asap Condensed", sans-serif;
-  transition: all .5s;
+  transition: all 0.5s;
   animation: slideFromRight 4s ease-in-out;
 }
 .addToCart svg {
@@ -120,7 +130,7 @@
 }
 .addToCart svg path:nth-child(4) {
   transform: translateY(-2rem);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .addToCart:hover svg path:nth-child(4) {
   transform: translateY(0rem);
