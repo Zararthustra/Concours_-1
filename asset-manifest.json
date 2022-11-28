@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Concours_1/static/css/main.e7f759d3.css",
-    "main.js": "/Concours_1/static/js/main.b3f9846e.js",
+    "main.css": "/Concours_1/static/css/main.92e69608.css",
+    "main.js": "/Concours_1/static/js/main.4dd3dc4d.js",
     "static/js/787.79891b12.chunk.js": "/Concours_1/static/js/787.79891b12.chunk.js",
     "static/media/space.jpg": "/Concours_1/static/media/space.8824ec1ee8af27902a6c.jpg",
-    "static/media/black0.png": "/Concours_1/static/media/black0.22d2602ff48120adc7e7.png",
-    "static/media/pink0.png": "/Concours_1/static/media/pink0.b55deedf4c0667df83d1.png",
-    "static/media/white0.png": "/Concours_1/static/media/white0.97830c51471b8c39fc24.png",
-    "static/media/green0.png": "/Concours_1/static/media/green0.aaea2d4c0c1c2b20f350.png",
+    "static/media/white0.png": "/Concours_1/static/media/white0.047355e254debbde56ef.png",
+    "static/media/black0.png": "/Concours_1/static/media/black0.691f7ddd2775b4238846.png",
+    "static/media/green0.png": "/Concours_1/static/media/green0.6856ba1e0b18eb6705bb.png",
+    "static/media/pink0.png": "/Concours_1/static/media/pink0.edcea607152af231ea6d.png",
     "static/media/green2.png": "/Concours_1/static/media/green2.7681e90633bd539c2b20.png",
     "static/media/pink2.png": "/Concours_1/static/media/pink2.082397c6d9ffb1843570.png",
     "static/media/pink1.png": "/Concours_1/static/media/pink1.4b334d13b0aad3d07bf4.png",
@@ -20,12 +20,12 @@
     "index.html": "/Concours_1/index.html",
     "static/media/add-cart.svg": "/Concours_1/static/media/add-cart.08e621e2034248a50aa5d50243914afe.svg",
     "static/media/profile.svg": "/Concours_1/static/media/profile.908cf6011ea65362afa6f1709e74ec7b.svg",
-    "main.e7f759d3.css.map": "/Concours_1/static/css/main.e7f759d3.css.map",
-    "main.b3f9846e.js.map": "/Concours_1/static/js/main.b3f9846e.js.map",
+    "main.92e69608.css.map": "/Concours_1/static/css/main.92e69608.css.map",
+    "main.4dd3dc4d.js.map": "/Concours_1/static/js/main.4dd3dc4d.js.map",
     "787.79891b12.chunk.js.map": "/Concours_1/static/js/787.79891b12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7f759d3.css",
-    "static/js/main.b3f9846e.js"
+    "static/css/main.92e69608.css",
+    "static/js/main.4dd3dc4d.js"
   ]
 }
