@@ -4,18 +4,8 @@
   justify-content: center;
   align-items: flex-end;
   margin: 0 2rem;
-  gap: 2rem;
+  gap: 4rem;
   font-size: 1.2rem;
-}
-
-/*
-** Price
-**/
-
-.rightBloc > p {
-  font-size: 1.5rem;
-  margin: 0;
-  animation: slideFromRight 2.2s ease-in-out;
 }
 
 /*
@@ -58,7 +48,6 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  animation: slideFromRight 2.2s ease-in-out;
 }
 .movingBox {
   position: absolute;
@@ -114,7 +103,7 @@
   border: none;
   border-radius: 5px;
   padding: 0.7rem 1rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
   color: white;
   font-size: 1.3rem;
   font-weight: 600;
@@ -134,5 +123,4 @@
 }
 .addToCart:hover svg path:nth-child(4) {
   transform: translateY(0rem);
-  /* animation: moveCart .5s ease-in-out; */
 }

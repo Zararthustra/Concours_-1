@@ -13,7 +13,7 @@
   --white: #fafafa;
   --pink: #ebd8d4;
   --green: #556e6b;
-  
+
   font-family: "Asap Condensed", sans-serif;
   font-size: 16px;
   background-color: var(--background);
@@ -35,7 +35,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
 }
 
 /*
