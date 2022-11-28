@@ -7,8 +7,8 @@ import { ColorBubble } from "./ColorBubble";
 
 export const BlocA = ({ color, setColor }) => {
   const colors = [
-    "var(--green)",
     "var(--pink)",
+    "var(--green)",
     "var(--white)",
     "var(--black)",
   ];

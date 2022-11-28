@@ -1,3 +1,9 @@
+@media (max-width: 350px) {
+  .details li {
+    gap: 6rem !important;
+  }
+}
+ 
 .blocC {
   position: relative;
   display: flex;
@@ -32,7 +38,6 @@
 .colorButton .color {
   width: 2rem;
   height: 2rem;
-  border: 1px solid black;
   border-radius: 50%;
 }
 .colorButton p {

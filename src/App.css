@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;600&family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@300;600&display=swap");
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   header img {
     display: none;
   }
+}
+@media (max-width: 550px) {
   .modelTitle h1 {
-    font-size: 7.5rem !important;
+    font-size: 5rem !important;
   }
   .modelTitle h2 {
     font-size: 3rem !important;
@@ -13,7 +15,6 @@
     right: 2.5rem !important;
   }
 }
-
 /*
 ** Global
 **/
@@ -25,7 +26,7 @@
   --pink: #ebd8d4;
   --green: #556e6b;
 
-  font-family: "Asap Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-color: var(--background);
 }
@@ -84,19 +85,31 @@ header div:nth-child(2) {
 .modelTitle h1 {
   font-size: 9rem;
   margin: 0;
-  background-image: url("./assets/space.jpg") !important;
+  background-image: url("./assets/space1.jpg") !important;
   background-size: cover;
   background-clip: text;
   background-repeat: no-repeat;
   -webkit-text-fill-color: transparent;
-  animation: fadeIn 1s ease-in-out;
+  /* animation: fadeIn 1s ease-in-out; */
+  animation: galaxyTraveling 25s ease-in-out infinite;
+}
+@keyframes galaxyTraveling {
+  0% {
+    background-position: top;
+  }
+  40% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
 }
 .modelTitle h2 {
   position: absolute;
   font-size: 4rem;
   margin: 0;
-  bottom: -2rem;
-  right: 3rem;
+  bottom: -1.5rem;
+  right: 4.5rem;
   animation: slideFromTop 1.5s ease-in-out;
 }
 

@@ -6,7 +6,6 @@ export const ColorButton = ({ color, setColor, backgroundColor, colorName }) => 
         className="color"
         style={{
           backgroundColor,
-          border: isSelected && "2px solid black"
         }}
         />
       <p

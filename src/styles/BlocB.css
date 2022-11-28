@@ -1,17 +1,10 @@
 @media (max-width: 400px) {
   .blocB {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5rem;
-    height: auto !important;
-    margin: 0 0 2rem !important;
+  margin: 0 !important;
   }
   .imgFull,
   .imgSide,
   .imgCamera {
-    position: static !important;
     scale: 1 !important;
   }
 }
