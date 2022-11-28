@@ -20,8 +20,24 @@ export const Details = ({ selectedStorage, setSelectedStorage, color }) => {
         <div>Android 12</div>
       </li>
       <li>
-        <div>Ecran</div>
-        <div>6,1" (15,5 cm)</div>
+        <div>Taille de l'écran</div>
+        <div>6,1 pouces (15,5 cm)</div>
+      </li>
+      <li>
+        <div>Définition de l'écran</div>
+        <div>2340 x 1080 px</div>
+      </li>
+      <li>
+        <div>Caméras arrière</div>
+        <div>50 Mpx, 10 Mpx, 12 Mpx</div>
+      </li>
+      <li>
+        <div>Caméra avant</div>
+        <div>10 Mpx</div>
+      </li>
+      <li>
+        <div>Poids</div>
+        <div>167 g</div>
       </li>
       <li>
         <div>RAM</div>
@@ -42,6 +58,10 @@ export const Details = ({ selectedStorage, setSelectedStorage, color }) => {
       <li>
         <div>Charge rapide</div>
         <div>Oui</div>
+      </li>
+      <li>
+        <div>Date de sortie</div>
+        <div>11/03/2022</div>
       </li>
     </ul>
   );

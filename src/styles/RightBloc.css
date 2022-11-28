@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: flex-end;
   margin: 0 2rem;
-  gap: 4rem;
+  gap: 5rem;
   font-size: 1.2rem;
 }
 
@@ -103,7 +103,6 @@
   border: none;
   border-radius: 5px;
   padding: 0.7rem 1rem;
-  margin: 2rem 0;
   color: white;
   font-size: 1.3rem;
   font-weight: 600;
