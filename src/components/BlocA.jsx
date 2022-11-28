@@ -39,8 +39,28 @@ export const BlocA = ({ color, setColor }) => {
         backgroundColor={color}
         zIndex={"-1"}
       />
-      <h2>{getColorName(color).toUpperCase()}</h2>
-      <div>
+      <div className="colorName">
+        <div className="relativeContainer">
+          <h2
+            style={{
+              animation: "blackWink 10s ease-in infinite",
+            }}
+          >
+            {getColorName(color).toUpperCase()}
+          </h2>
+          <h2
+            className="repetition"
+            style={{
+              left: "-1rem",
+              top: "4rem",
+              animation: "shadowComeAndGo 10s ease-in infinite",
+            }}
+          >
+            {getColorName(color).toUpperCase()}
+          </h2>
+        </div>
+      </div>
+      <div className="smartphones">
         {colors.map((item, index) => {
           return (
             <img
