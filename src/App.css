@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;600&display=swap");
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .bigCenterColorBubble {
     width: 70vw !important;
     height: 70vw !important;
   }
+}
+.bigCenterColorBubble {
+  transform: scale3d(1, 1, -5.5);
+
 }
 
 :root {
@@ -35,7 +39,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 0 2rem 5rem;
+  padding: 0 1rem 5rem;
 }
 
 /*

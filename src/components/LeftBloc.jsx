@@ -42,7 +42,7 @@ export const LeftBloc = ({ color, setColor }) => {
               zIndex: isSelected(item) ? "1" : "0",
               filter: isSelected(item)
                 ? "drop-shadow(4px 4px 10px black)"
-                : "grayscale(100%)",
+                : "grayscale(90%)",
             }}
             src={getImage(item)}
             alt={"Samsung Galaxy S22 " + getColorName(item)}
