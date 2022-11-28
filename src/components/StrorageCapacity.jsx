@@ -18,7 +18,7 @@ export const StrorageCapacity = ({
         onClick={() => setSelectedStorage(128)}
         style={{
           fontWeight: selectedStorage === 128 && "600",
-          color: selectedStorage === 128 && getContrast(color),
+          color: selectedStorage === 128 ? getContrast(color) : "black",
         }}
       >
         128 Go
@@ -27,7 +27,7 @@ export const StrorageCapacity = ({
         onClick={() => setSelectedStorage(256)}
         style={{
           fontWeight: selectedStorage === 256 && "600",
-          color: selectedStorage === 256 && getContrast(color),
+          color: selectedStorage === 256 ? getContrast(color) : "black",
         }}
       >
         256 Go

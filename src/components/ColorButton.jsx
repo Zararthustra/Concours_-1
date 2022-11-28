@@ -6,9 +6,9 @@ export const ColorButton = ({ color, setColor, backgroundColor, colorName }) => 
         className="color"
         style={{
           backgroundColor,
-          outline: isSelected && "1px solid black"
+          border: isSelected && "2px solid black"
         }}
-      />
+        />
       <p
       style={{
         fontWeight: isSelected && "600"

@@ -1,0 +1,71 @@
+@media (max-width: 900px) {
+  .blocA {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  .blocA div:nth-child(3) {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  .blocA div:nth-child(3) {
+    margin: 0 !important;
+  }
+.blocA h2 {
+  font-size: 7.5rem !important;
+}
+}
+.blocA {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+.blocA div:nth-child(3) {
+  width: 100%;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.blocA img {
+  cursor: pointer;
+  scale: 1.2;
+  transition: all 0.5s;
+}
+
+.blocA h2 {
+  width: 100%;
+  font-size: 9rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.blocA img:hover {
+  scale: 1.25;
+}
+.blocA .isSelected {
+  animation: slideFromLeft 1s ease-in-out, upNdown 4s ease-in-out infinite !important;
+}
+#img1 {
+  top: -10rem;
+  right: -10rem;
+  animation: slideFromLeft 1.2s ease-in-out;
+}
+#img2 {
+  top: -8rem;
+  right: -5rem;
+  animation: slideFromLeft 1.1s ease-in-out;
+}
+#img3 {
+  top: -14rem;
+  right: 0rem;
+  animation: slideFromLeft 1s ease-in-out;
+}
+#img4 {
+  top: -10rem;
+  right: 5rem;
+  animation: slideFromLeft 0.9s ease-in-out;
+}

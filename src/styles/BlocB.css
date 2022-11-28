@@ -1,0 +1,54 @@
+@media (max-width: 400px) {
+  .blocB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    height: auto !important;
+    margin: 0 0 2rem !important;
+  }
+  .imgFull,
+  .imgSide,
+  .imgCamera {
+    position: static !important;
+    scale: 1 !important;
+  }
+}
+
+.blocB {
+  position: relative;
+  width: 25rem;
+  height: 35rem;
+  margin: 0 2rem;
+  z-index: 1;
+}
+
+/*
+** Images
+**/
+
+.blocB img {
+  max-width: 9rem;
+}
+.imgFull,
+.imgSide,
+.imgCamera {
+  position: absolute;
+}
+.imgFull {
+  top: 5rem;
+  scale: 1.2;
+  right: 0;
+  animation: slideFromTop 1.5s ease-in-out;
+}
+.imgSide {
+  scale: 1.1;
+  top: 10rem;
+  animation: slideFromLeft 1.5s ease-in-out;
+}
+.imgCamera {
+  scale: 1.1;
+  top: 16rem;
+  animation: slideFromBot 1.5s ease-in-out;
+}

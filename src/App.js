@@ -1,10 +1,9 @@
-import { ColorBubble } from "./components/ColorBubble";
 import { Navbar } from "./components/Navbar";
-import { RightBloc } from "./components/RightBloc";
+import { BlocC } from "./components/BlocC";
 import { useState } from "react";
-import { MidBloc } from "./components/MidBloc";
-import { LeftBloc } from "./components/LeftBloc";
-import { ModelTitle } from "./components/ModelTitle";
+import { BlocB } from "./components/BlocB";
+import { BlocA } from "./components/BlocA";
+import { Header } from "./components/Header";
 
 function App() {
   const [color, setColor] = useState("var(--green)");
@@ -13,30 +12,11 @@ function App() {
   return (
     <>
       <Navbar color={color} cartNumber={cartNumber} />
-      <ColorBubble
-        size={"20rem"}
-        top={"-6rem"}
-        left={"-8rem"}
-        backgroundColor={color}
-      />
-      <ColorBubble
-        size={"20rem"}
-        top={"-12rem"}
-        right={"2.5rem"}
-        backgroundColor={color}
-      />
-      <ColorBubble
-        className="bigCenterColorBubble"
-        size={"40vw"}
-        top={"20rem"}
-        left={"8vw"}
-        backgroundColor={color}
-      />
-      <ModelTitle color={color} />
+      <Header color={color} />
       <main>
-        <LeftBloc color={color} setColor={setColor} />
-        <MidBloc color={color} />
-        <RightBloc
+        <BlocA color={color} setColor={setColor} />
+        <BlocB color={color} />
+        <BlocC
           color={color}
           setColor={setColor}
           cartNumber={cartNumber}

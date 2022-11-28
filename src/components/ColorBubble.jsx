@@ -2,8 +2,10 @@ export const ColorBubble = ({
   className,
   size,
   top,
+  bottom,
   left,
   right,
+  zIndex,
   backgroundColor,
 }) => {
   return (
@@ -14,14 +16,15 @@ export const ColorBubble = ({
         height: size,
         backgroundColor,
         top,
+        bottom,
         left,
         right,
         borderRadius: "50%",
         position: "absolute",
-        zIndex: "-1",
+        zIndex: zIndex,
         transition: "all .5s",
         animation: "bubbleFadeIn 4s ease-in",
-        opacity: "0.8",
+        opacity: "1",
       }}
     />
   );
