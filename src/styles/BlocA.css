@@ -45,7 +45,6 @@
   font-size: 9rem;
   text-align: center;
   margin: 0;
-  font-family: "Fugaz One", cursive;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -54,10 +53,19 @@
 .colorName .repetition {
   position: absolute;
   color: white;
-  -webkit-text-stroke: 1px black;
   z-index: -1;
 }
-
+.stopSlideShow p {
+  opacity: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.5s;
+}
+.stopSlideShow:hover p {
+  opacity: 1;
+}
 /*
 ** Smartphones
 **/

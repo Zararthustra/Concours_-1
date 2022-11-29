@@ -7,29 +7,36 @@ import { Header } from "./components/Header";
 import { colors } from "./utils/colors";
 
 function App() {
-  const [colorsIndex, setcolorsIndex] = useState(0);
-  const [color, setColor] = useState(colors[colorsIndex]);
+  const [color, setColor] = useState("var(--green)");
   const [cartNumber, setCartNumber] = useState(0);
+  const [stopSlideShow, setStopSlideShow] = useState(false);
+
+  const getNextColor = (currentColor) => {
+    const currentIndex = colors.findIndex((item) => item === currentColor);
+    const newColor = colors[currentIndex + 1 > 3 ? 0 : currentIndex + 1];
+    setColor(newColor);
+  };
 
   useEffect(() => {
-    console.log(color, "Waiting for", colorsIndex, colors[colorsIndex]);
-    const timer = setTimeout(() => {
-      setColor(colors[colorsIndex]);
-      console.log("processed", colorsIndex, colors[colorsIndex]);
-    }, 10000);
-    return () => {
-      setcolorsIndex(colorsIndex + 1 > 3 ? 0 : colorsIndex + 1);
-      console.log('return', colorsIndex, colors[colorsIndex]);
-      clearTimeout(timer);
-    };
-  }); //<===
+    if (!stopSlideShow) {
+      const timer = setTimeout(() => {
+        getNextColor(color);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  });
 
   return (
     <>
       <Navbar cartNumber={cartNumber} />
       <Header color={color} />
       <main>
-        <BlocA color={color} setColor={setColor} colorsIndex={colorsIndex} setcolorsIndex={setcolorsIndex}/>
+        <BlocA
+          color={color}
+          setColor={setColor}
+          stopSlideShow={stopSlideShow}
+          setStopSlideShow={setStopSlideShow}
+        />
         <BlocB color={color} />
         <BlocC
           color={color}

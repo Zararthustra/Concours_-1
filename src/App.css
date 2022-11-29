@@ -66,6 +66,7 @@ header {
 header img {
   width: 100%;
   z-index: -4;
+  animation: fadeIn 1.5s ease-in-out;
 }
 header div:nth-child(2) {
   width: 100%;
@@ -222,11 +223,11 @@ header div:nth-child(2) {
     color: black;
   }
   3% {
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 3px black;
     color: white;
   }
   97% {
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 3px black;
     color: white;
   }
   100% {
