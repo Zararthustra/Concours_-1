@@ -6,14 +6,14 @@ export const ColorPicker = ({ color, setColor }) => {
       <ColorButton
         color={color}
         setColor={setColor}
-        backgroundColor="var(--pink)"
-        colorName="Rose"
+        backgroundColor="var(--green)"
+        colorName="Vert"
       />
       <ColorButton
         color={color}
         setColor={setColor}
-        backgroundColor="var(--green)"
-        colorName="Vert"
+        backgroundColor="var(--pink)"
+        colorName="Rose"
       />
       <ColorButton
         color={color}

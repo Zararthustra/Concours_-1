@@ -4,14 +4,9 @@ import white from "../assets/white/white0.png";
 import pink from "../assets/pink/pink0.png";
 import { getColorName } from "../utils/getColorName";
 import { ColorBubble } from "./ColorBubble";
+import { colors } from "../utils/colors";
 
 export const BlocA = ({ color, setColor }) => {
-  const colors = [
-    "var(--pink)",
-    "var(--green)",
-    "var(--white)",
-    "var(--black)",
-  ];
   const getImage = (CSSColor) => {
     switch (CSSColor) {
       case "var(--black)":
@@ -35,7 +30,7 @@ export const BlocA = ({ color, setColor }) => {
       <ColorBubble
         size={"52rem"}
         top={"-10rem"}
-        left={"-10rem"}
+        left={"-12rem"}
         backgroundColor={color}
         zIndex={"-1"}
       />
@@ -43,7 +38,8 @@ export const BlocA = ({ color, setColor }) => {
         <div className="relativeContainer">
           <h2
             style={{
-              animation: "blackWink 10s ease-in infinite",
+              animation:
+                "blackWink 10s ease-in infinite, slideFromLeft 1.5s ease-in-out",
             }}
           >
             {getColorName(color).toUpperCase()}
@@ -53,7 +49,8 @@ export const BlocA = ({ color, setColor }) => {
             style={{
               left: "-1rem",
               top: "4rem",
-              animation: "shadowComeAndGo 10s ease-in infinite",
+              animation:
+                "shadowComeAndGo 10s ease-in infinite, slideFromTop 2s ease-in-out",
             }}
           >
             {getColorName(color).toUpperCase()}

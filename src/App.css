@@ -22,7 +22,7 @@
 :root {
   --background: #eee6e6;
   --black: #37383a;
-  --white: #fafafa;
+  --white: #f0f0f0;
   --pink: #ebd8d4;
   --green: #556e6b;
 
@@ -85,24 +85,12 @@ header div:nth-child(2) {
 .modelTitle h1 {
   font-size: 9rem;
   margin: 0;
-  background-image: url("./assets/space1.jpg") !important;
+  background-image: url("./assets/space1.jpg");
   background-size: cover;
-  background-clip: text;
   background-repeat: no-repeat;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* animation: fadeIn 1s ease-in-out; */
-  animation: galaxyTraveling 25s ease-in-out infinite;
-}
-@keyframes galaxyTraveling {
-  0% {
-    background-position: top;
-  }
-  40% {
-    background-position: bottom;
-  }
-  100% {
-    background-position: top;
-  }
+  animation: fadeIn 1s ease-in-out,  galaxyTraveling 200s ease-in-out infinite;
 }
 .modelTitle h2 {
   position: absolute;
@@ -117,6 +105,17 @@ header div:nth-child(2) {
 ** Animations
 **/
 
+@keyframes galaxyTraveling {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
 @keyframes upNdown {
   0% {
     transform: translateY(0);
