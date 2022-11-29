@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Concours_1/static/css/main.063e4a27.css",
-    "main.js": "/Concours_1/static/js/main.a30bf3d0.js",
+    "main.js": "/Concours_1/static/js/main.94192c0e.js",
     "static/js/787.79891b12.chunk.js": "/Concours_1/static/js/787.79891b12.chunk.js",
     "static/media/space1.jpg": "/Concours_1/static/media/space1.7482b5a104f013d8a95b.jpg",
     "static/media/all-colors3.jpeg": "/Concours_1/static/media/all-colors3.7597cb72b1dc44d4c3b8.jpeg",
@@ -22,11 +22,11 @@
     "static/media/add-cart.svg": "/Concours_1/static/media/add-cart.08e621e2034248a50aa5d50243914afe.svg",
     "static/media/profile.svg": "/Concours_1/static/media/profile.908cf6011ea65362afa6f1709e74ec7b.svg",
     "main.063e4a27.css.map": "/Concours_1/static/css/main.063e4a27.css.map",
-    "main.a30bf3d0.js.map": "/Concours_1/static/js/main.a30bf3d0.js.map",
+    "main.94192c0e.js.map": "/Concours_1/static/js/main.94192c0e.js.map",
     "787.79891b12.chunk.js.map": "/Concours_1/static/js/787.79891b12.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.063e4a27.css",
-    "static/js/main.a30bf3d0.js"
+    "static/js/main.94192c0e.js"
   ]
 }
