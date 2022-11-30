@@ -37,7 +37,7 @@ function App() {
           stopSlideShow={stopSlideShow}
           setStopSlideShow={setStopSlideShow}
         />
-        <BlocB color={color} />
+        <BlocB stopSlideShow={stopSlideShow} color={color} />
         <BlocC
           color={color}
           setColor={setColor}

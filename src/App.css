@@ -13,7 +13,7 @@
     font-size: 3rem !important;
     bottom: -1.5rem !important;
     right: 2.5rem !important;
-}
+  }
 }
 /*
 ** Global
@@ -91,7 +91,7 @@ header div:nth-child(2) {
   background-repeat: no-repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fadeIn 1s ease-in-out,  galaxyTraveling 200s ease-in-out infinite;
+  animation: fadeIn 1s ease-in-out, galaxyTraveling 200s ease-in-out infinite;
 }
 .modelTitle h2 {
   position: absolute;
@@ -240,6 +240,60 @@ header div:nth-child(2) {
     transform: translateX(100%);
     opacity: 0;
     color: black;
+  }
+}
+@keyframes topDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  3% {
+    opacity: 1;
+    transform: translateY(-7%);
+  }
+  97% {
+    opacity: 1;
+    transform: translateY(5%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+@keyframes bottomUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  3% {
+    opacity: 1;
+    transform: translateY(7%);
+  }
+  97% {
+    opacity: 1;
+    transform: translateY(-5%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+@keyframes sideSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  3% {
+    opacity: 1;
+    transform: translateX(-7%);
+  }
+  97% {
+    opacity: 1;
+    transform: translateX(5%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
   }
 }
 @keyframes progressBar {
