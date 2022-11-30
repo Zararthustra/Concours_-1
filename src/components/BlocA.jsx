@@ -6,8 +6,13 @@ import { getColorName } from "../utils/getColorName";
 import { ColorBubble } from "./ColorBubble";
 import { colors } from "../utils/colors";
 import { getContrast } from "../utils/getContrast";
+import { useEffect, useRef } from "react";
 
 export const BlocA = ({ color, setColor, stopSlideShow, setStopSlideShow }) => {
+  const blackWinkRef = useRef();
+  const shadowComeAndGoRef = useRef();
+  const progressBarRef = useRef();
+
   const getImage = (CSSColor) => {
     switch (CSSColor) {
       case "var(--black)":
@@ -25,6 +30,39 @@ export const BlocA = ({ color, setColor, stopSlideShow, setStopSlideShow }) => {
   const isSelected = (selfColor) => {
     return color === selfColor;
   };
+
+  // Reset animations
+  useEffect(() => {
+
+    let blackWink = blackWinkRef;
+    let comeAndGo = shadowComeAndGoRef;
+    let progressBar = progressBarRef;
+
+    if (stopSlideShow)
+      return () => {
+        blackWink.current.style.animation = "none";
+        comeAndGo.current.style.animation = "none";
+      };
+
+    setTimeout(() => {
+      blackWink.current &&
+        (blackWink.current.style.animation =
+          "blackWink 5s linear infinite");
+      comeAndGo.current &&
+        (comeAndGo.current.style.animation =
+          "shadowComeAndGo 5s linear infinite");
+      progressBar.current &&
+        (progressBar.current.style.animation =
+          "progressBar 5s linear infinite");
+    }, 0);
+
+    return () => {
+      blackWink.current && (blackWink.current.style.animation = "none");
+      comeAndGo.current && (comeAndGo.current.style.animation = "none");
+      progressBar.current && (progressBar.current.style.animation = "none");
+    };
+
+  }, [color, stopSlideShow]);
 
   return (
     <div className="blocA">
@@ -75,24 +113,29 @@ export const BlocA = ({ color, setColor, stopSlideShow, setStopSlideShow }) => {
         ) : (
           <p>Arrêter le défilement</p>
         )}
+        {!stopSlideShow && (
+          <div
+            className="progressBar"
+            ref={progressBarRef}
+            style={{
+              position: "absolute",
+              left: "0.5rem",
+              top: "0rem",
+              height: ".5rem",
+              backgroundColor: getContrast(color),
+            }}
+          />
+        )}
       </div>
       <div className="colorName">
         <div className="relativeContainer">
+          <h2 ref={blackWinkRef}>{getColorName(color).toUpperCase()}</h2>
           <h2
-            style={{
-              animation:
-                "blackWink 5s ease-in infinite, slideFromLeft 2s ease-in-out",
-            }}
-          >
-            {getColorName(color).toUpperCase()}
-          </h2>
-          <h2
-            className="repetition"
+            className="shadow"
+            ref={shadowComeAndGoRef}
             style={{
               left: "-1rem",
-              top: "4rem",
-              animation:
-                "shadowComeAndGo 5s ease-in infinite, slideFromTop 3s ease-in-out",
+              top: "2rem",
             }}
           >
             {getColorName(color).toUpperCase()}

@@ -13,7 +13,7 @@
     font-size: 3rem !important;
     bottom: -1.5rem !important;
     right: 2.5rem !important;
-  }
+}
 }
 /*
 ** Global
@@ -205,7 +205,7 @@ header div:nth-child(2) {
   3% {
     opacity: 1;
     color: black;
-    transform: translateX(5%);
+    transform: translateX(7%);
   }
   97% {
     opacity: 1;
@@ -220,18 +220,34 @@ header div:nth-child(2) {
 }
 @keyframes blackWink {
   0% {
+    transform: translateX(-100%);
+    opacity: 0;
     color: black;
   }
   3% {
+    transform: translateX(-1%);
+    opacity: 1;
     -webkit-text-stroke: 3px black;
     color: white;
   }
   97% {
+    transform: translateX(1%);
+    opacity: 1;
     -webkit-text-stroke: 3px black;
     color: white;
   }
   100% {
+    transform: translateX(100%);
+    opacity: 0;
     color: black;
+  }
+}
+@keyframes progressBar {
+  0% {
+    width: 15rem;
+  }
+  100% {
+    width: 0rem;
   }
 }
 
