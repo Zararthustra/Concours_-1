@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@300;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;600&display=swap');
 
 @media (max-width: 750px) {
   header img {
@@ -227,13 +227,13 @@ header div:nth-child(2) {
   3% {
     transform: translateX(-1%);
     opacity: 1;
-    -webkit-text-stroke: 3px black;
+    -webkit-text-stroke: 1px black;
     color: white;
   }
   97% {
     transform: translateX(1%);
     opacity: 1;
-    -webkit-text-stroke: 3px black;
+    -webkit-text-stroke: 1px black;
     color: white;
   }
   100% {
@@ -246,6 +246,9 @@ header div:nth-child(2) {
   0% {
     opacity: 0;
     transform: translateY(-100%);
+  }
+  2% {
+    opacity: 0;
   }
   3% {
     opacity: 1;
