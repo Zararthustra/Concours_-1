@@ -63,7 +63,7 @@
   width: 45%;
   height: 100%;
   border-radius: 3px;
-  transition: all cubic-bezier(0.2, -0.3, 0.78, 1.26) 0.3s;
+  transition: all cubic-bezier(0.5, -0.3, 0.78, 1.4) 0.3s;
 }
 .strorageCapacity div {
   padding: 0.4rem 0.7rem;

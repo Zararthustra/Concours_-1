@@ -3,7 +3,6 @@ import black from "../assets/black/black0.png";
 import white from "../assets/white/white0.png";
 import pink from "../assets/pink/pink0.png";
 import { getColorName } from "../utils/getColorName";
-import { ColorBubble } from "./ColorBubble";
 import { colors } from "../utils/colors";
 import { getContrast } from "../utils/getContrast";
 import { useEffect, useRef } from "react";
@@ -12,6 +11,7 @@ export const BlocA = ({ color, setColor, stopSlideShow, setStopSlideShow }) => {
   const blackWinkRef = useRef();
   const shadowComeAndGoRef = useRef();
   const progressBarRef = useRef();
+  const bubbleRef = useRef();
 
   const getImage = (CSSColor) => {
     switch (CSSColor) {
@@ -33,45 +33,56 @@ export const BlocA = ({ color, setColor, stopSlideShow, setStopSlideShow }) => {
 
   // Reset animations
   useEffect(() => {
-
+    const animation = " 5s linear infinite";
     let blackWink = blackWinkRef;
     let comeAndGo = shadowComeAndGoRef;
     let progressBar = progressBarRef;
+    let bubble = bubbleRef;
 
     if (stopSlideShow)
       return () => {
         blackWink.current.style.animation = "none";
         comeAndGo.current.style.animation = "none";
+        bubble.current.style.animation = "none";
       };
 
     setTimeout(() => {
       blackWink.current &&
-        (blackWink.current.style.animation =
-          "blackWink 5s linear infinite");
+        (blackWink.current.style.animation = "blackWink" + animation);
       comeAndGo.current &&
-        (comeAndGo.current.style.animation =
-          "shadowComeAndGo 5s linear infinite");
+        (comeAndGo.current.style.animation = "shadowComeAndGo" + animation);
       progressBar.current &&
-        (progressBar.current.style.animation =
-          "progressBar 5s linear infinite");
+        (progressBar.current.style.animation = "progressBar" + animation);
+      bubble.current &&
+        (bubble.current.style.animation = "bubbleShadow" + animation);
     }, 0);
 
     return () => {
       blackWink.current && (blackWink.current.style.animation = "none");
       comeAndGo.current && (comeAndGo.current.style.animation = "none");
       progressBar.current && (progressBar.current.style.animation = "none");
+      bubble.current && (bubble.current.style.animation = "none");
     };
-
   }, [color, stopSlideShow]);
 
   return (
     <div className="blocA">
-      <ColorBubble
-        size={"60rem"}
-        top={"-17rem"}
-        left={"-15rem"}
-        backgroundColor={color}
-        zIndex={"-1"}
+      <div
+        ref={bubbleRef}
+        style={{
+          width: "60rem",
+          height: "60rem",
+          backgroundColor: color,
+          top: "-17rem",
+          left: "-15rem",
+          borderRadius: "50%",
+          position: "absolute",
+          zIndex: "-1",
+          transition: "all .5s",
+          animation: "bubbleFadeIn 4s ease-in",
+          opacity: "1",
+          boxShadow: "-20px 15px 10px #333",
+        }}
       />
       <div
         className="stopSlideShow"
