@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   padding: 7rem 0;
-  transition: all .5s;
+  transition: all 0.5s;
   margin-bottom: 4rem;
   animation: fadeIn 1s ease-in;
 }
@@ -86,7 +86,7 @@
 
 .smartphones {
   width: 100%;
-  margin: 0 2rem;
+  margin: 0 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
