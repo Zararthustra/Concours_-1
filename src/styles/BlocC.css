@@ -30,7 +30,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   animation: slideFromRight 1.2s ease-in-out;
   z-index: 1;
 }
@@ -41,11 +40,12 @@
   align-items: center;
   gap: 0.2rem;
   cursor: pointer;
+  width: 4rem;
 }
 .colorButton .color {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+  height: .8rem;
+  border-radius: 15px;
+  transition: all .5s;
 }
 .colorButton p {
   font-size: 1rem;
