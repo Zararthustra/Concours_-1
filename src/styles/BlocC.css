@@ -1,6 +1,13 @@
 @media (max-width: 350px) {
   .details li {
     gap: 6rem !important;
+    font-size: .8rem;
+  }
+  .addToCart {
+    font-size: .8rem !important;
+  }
+  .addToCart svg {
+    width: 1.5rem !important;
   }
 }
 
